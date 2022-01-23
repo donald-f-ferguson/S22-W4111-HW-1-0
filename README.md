@@ -99,5 +99,48 @@ the directory you created and replace ```dff9``` with your UNI.<br><br>
 
 - The remaining steps in HW0: Non-Programming are in the notebook that you opened.
 
+## HW 0: Programming
 
-W4111 - Intro. to Databases (S22, 002/V02): HW 0 and HW 1 Template
+- Complete the steps for HW0: Non-Programming. 
+
+
+- The programming track is not "harder" than non-programming. The initial set up is a
+little more work, however.
+
+
+- Download and install [PyCharm.](https://www.jetbrains.com/pycharm/download) Download
+and install the professional edition.
+
+
+- Follow the
+[instructions](https://www.jetbrains.com/help/pycharm/license-activation-dialog.html) to set the license key using the JetBrains account you
+used to get the DataGrip licenses.
+
+
+- Start PyCharm, navigate to and open the project that you cloned from GitHub.
+
+
+- Follow the [instructions](https://www.jetbrains.com/help/pycharm/conda-support-creating-conda-virtual-environment.html)
+for creating a new virtual Conda environment for the project.
+
+
+- Select the root folder in the project, right click and add a new Python Package named
+<UNI>_web_src. My example is dff9_web_src.
+
+
+- Copy the files from ```dff9_web_src``` into the package you created.
+
+
+- Follow the [instructions](https://www.jetbrains.com/help/pycharm/installing-uninstalling-and-upgrading-packages.html)
+for adding a package to your virtual environment. You should add the package ```flask.```
+
+
+- Right click on your file ```application.py``` that you copied and select run. You
+will see a console window open and this will show a URL. Copy on the URL.
+
+
+- Open a browser. Paste the URL and append '/health'. My URL looks like
+```http://172.20.1.14:5000/health```. Yours may be a little different.
+
+- Hit enter. You should see a health message. Take a screenshot of the browser window
+and add the file to the directory. My example is ""
