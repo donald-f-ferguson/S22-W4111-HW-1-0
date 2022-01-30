@@ -2,8 +2,6 @@
 
 ## Introduction
 
-Ellena真好看
-
 This project is the implementation template for HW 0 and HW 1 for both the
 programming and non-programming tracks.
 
