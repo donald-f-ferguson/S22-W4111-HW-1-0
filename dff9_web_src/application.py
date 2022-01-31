@@ -51,5 +51,14 @@ def demo(parameter1=None):
 
 ##################################################################################################################
 
+
+@app.route("/api/db_book/students/<ID>", methods=["GET"])
+def get_student_by_id(ID):
+    #
+    # Your code goes here.
+    #
+    pass
+
+
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5000)
