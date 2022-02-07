@@ -10,4 +10,4 @@ class Student:
         # Form SQL
         # Run query
         # return result
-        pass
+        return "Cool" + str(ID) + "!!"

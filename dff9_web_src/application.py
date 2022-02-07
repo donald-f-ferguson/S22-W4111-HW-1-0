@@ -3,6 +3,10 @@ import json
 from datetime import datetime
 import rest_utils
 
+from student_resource import Student
+
+student_resource = Student()
+
 app = Flask(__name__)
 
 
@@ -17,6 +21,13 @@ def health_check():
     rsp_str = json.dumps(rsp_data)
     rsp = Response(rsp_str, status=200, content_type="application/json")
     return rsp
+
+
+@app.route("/", methods=["GET"])
+def class_demo():
+    rsp = Response("Cool stuff in recitation", status=200, content_type="text/plain")
+    return rsp
+
 
 
 # TODO Remove later. Solely for explanatory purposes.
@@ -57,7 +68,9 @@ def get_student_by_id(ID):
     #
     # Your code goes here.
     #
-    pass
+    msg = student_resource.get_by_id(ID)
+    rsp = Response(msg, status=200, content_type="text/plain")
+    return rsp
 
 
 if __name__ == '__main__':
